@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Kanit-ExtraLight, sans-serif;
+}
+
+.paragraph {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.highlight {
+  color: rgb(147, 0, 0);
+  font-family: PirataOne-Regular, sans-serif;
+  font-weight: 400;
+}
+
+.content-container {
+  flex-grow: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.top-banner {
+  position: relative;
+}
+
+.nav-links-container {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100%;
+  /* margin: 0 auto; */
+  width: 155px;
+  height: 50px;
+}
+
+.footer-links-container {
+  color: rgb(147, 0, 0);
+  text-align: center;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.footer-link {
+  flex: auto;
+  font-size: 30px;
+  font-family: PirataOne-Regular, sans-serif;
+}

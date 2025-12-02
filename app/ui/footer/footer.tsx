@@ -13,7 +13,7 @@ const links = [
   { name: "discord", href: "https://discord.gg/GUxxjHAQQY" },
   {
     name: "kontakt",
-    href: "/contact",
+    href: "/kontakt",
   },
 ];
 

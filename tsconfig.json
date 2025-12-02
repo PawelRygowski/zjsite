@@ -27,7 +27,8 @@
       "@/hooks/*": ["./app/hooks/*"],
       "@/fonts/*": ["./app/fonts/*"],
       "@/lib/*": ["./app/lib/*"],
-      "@/utils/*": ["./app/utils/*"]
+      "@/utils/*": ["./app/utils/*"],
+      "@/data/*": ["./app/data/*"]
     }
   },
   "include": [

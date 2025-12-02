@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { TopNav } from "./ui/nav/topnav";
+import { Footer } from "./ui/footer/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <TopNav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

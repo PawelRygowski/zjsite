@@ -72,3 +72,7 @@ body {
   font-size: 30px;
   font-family: PirataOne-Regular, sans-serif;
 }
+
+.nav-link {
+  display: block;
+}

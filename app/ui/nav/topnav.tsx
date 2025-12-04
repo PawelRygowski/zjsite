@@ -28,6 +28,7 @@ export function TopNav() {
               key={link.name}
               href={link.href}
               className={"nav-link " + (pathname === link.href ? "active" : "")}
+              onClick={() => setOpen(false)}
             >
               {link.name}
             </Link>

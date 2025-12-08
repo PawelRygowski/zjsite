@@ -1,0 +1,9 @@
+.regulamin-header {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.regulamin-item {
+  list-style-type: number;
+  font-size: 20px;
+}

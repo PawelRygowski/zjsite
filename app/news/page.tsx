@@ -1,7 +1,7 @@
 export default async function Page() {
   return (
-    <>
-      <h1>News Page</h1>
-    </>
+    <div className="content-container">
+      <h1 className="title">Aktualności</h1>
+    </div>
   );
 }

@@ -1,0 +1,32 @@
+.info-list {
+  list-style-type: "> ";
+  list-style-position: inside;
+}
+
+.info-list-item {
+  line-height: 2;
+}
+
+.highlight-green {
+  color: green;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.map-frame {
+  border: 0;
+  max-width: 100%;
+}
+
+.highlight-link {
+  color: rgb(21, 115, 221);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.highlight-link:hover {
+  color: rgb(147, 0, 0);
+}

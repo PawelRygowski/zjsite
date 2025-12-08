@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TowerTop from "@/public/tower-top.webp";
 import GrubaBottom from "@/public/gruba-bottom.png";
 import Image from "next/image";
+
 export const metadata: Metadata = {
   title: "Home",
 };
@@ -10,7 +11,7 @@ export default async function Page() {
   return (
     <main>
       <Image src={TowerTop} alt="Ziemie Jałowe" className="home-banner" />
-      <div className="home-container">
+      <div className="content-container">
         <p className="paragraph">
           W <span className="highlight">Świecie Pośrednim</span> powiadają, że
           &quot;świat poszedł naprzód&quot;. Zaczynasz coraz bardziej to
@@ -28,8 +29,10 @@ export default async function Page() {
         <p className="paragraph centered">
           Czy spróbujesz zapisać swoje imię na kartach tej historii?
         </p>
-        <p className="paragraph centered highlight">mroe </p>{" "}
+        <br />
+
         <video
+          className="centered"
           autoPlay
           loop
           playsInline
@@ -37,12 +40,10 @@ export default async function Page() {
           preload="none"
           aria-label="Video player"
         >
-          <source
-            src={`${process.env.NEXT_PUBLIC_BASE_URL}/public/video-main.mp4`}
-            type="video/mp4"
-          />
+          <source src={`/video-main.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <br />
         <p className="paragraph">
           <span className="highlight">Ziemie Jałowe</span> to tygodniowy konwent
           tworzony przez fanów i dla fanów szeroko rozumianej fantastyki

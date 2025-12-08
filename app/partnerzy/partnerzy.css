@@ -1,0 +1,28 @@
+.partners-and-sponsors-title {
+  text-align: center;
+  font-size: 40px;
+}
+.partners-section-title,
+.sponsors-section-title {
+  text-align: center;
+  font-size: 40px;
+}
+.partners-grid,
+.sponsors-grid {
+  text-align: center;
+  margin: 20 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.partner-card,
+.partner-card {
+  display: flex;
+  max-height: 300px;
+  margin: 20px;
+}
+
+.partner-logo,
+.sponsor-logo {
+  object-fit: scale-down;
+}

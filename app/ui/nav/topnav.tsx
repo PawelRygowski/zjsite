@@ -15,6 +15,7 @@ export function TopNav() {
     <>
       <Image src={TopBanner} alt="Ziemie Jałowe" className="top-banner" />
       <button
+        className="menu-button title"
         onClick={() => {
           setOpen(!open);
         }}

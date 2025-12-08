@@ -1,33 +1,22 @@
-"use client";
-import TopBanner from "@/public/pasek-stronka.png";
 import Link from "next/link";
-import { useParams, usePathname } from "next/navigation";
-import Image from "next/image";
-
-const links = [
-  { name: "facebook", href: "https://www.facebook.com/ZiemieJalowe" },
-  {
-    name: "instagram",
-    href: "https://www.instagram.com/ziemie_jalowe/",
-  },
-  { name: "discord", href: "https://discord.gg/GUxxjHAQQY" },
-  {
-    name: "kontakt",
-    href: "/kontakt",
-  },
-];
+import "./footer.css";
+import { fetchFooterLinks } from "@/data/footer-links";
 
 export function Footer() {
-  const pathname = usePathname();
+  const links = fetchFooterLinks();
   return (
-    <>
+    <div className="footer-container">
       <div className="footer-links-container">
         {links.map((link) => (
-          <Link key={link.name} href={link.href} className={"footer-link"}>
+          <Link
+            key={link.name}
+            href={link.href}
+            className={`footer-link pirate`}
+          >
             {link.name}
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 }

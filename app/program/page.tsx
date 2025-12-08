@@ -1,7 +1,8 @@
 export default async function Page() {
   return (
-    <>
-      <h1>program Page</h1>
-    </>
+    <div className="content-container">
+      <h1 className="title centered">Program</h1>
+      <p>Już w krótce...</p>
+    </div>
   );
 }

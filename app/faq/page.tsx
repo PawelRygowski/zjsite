@@ -11,7 +11,7 @@ export default async function Page() {
   const faqData = await fetchFaqData();
 
   return (
-    <div className="faq-page-container">
+    <div className="content-container">
       {faqData.map((item) => {
         return (
           <div key={item.id} className="faq-item-container">

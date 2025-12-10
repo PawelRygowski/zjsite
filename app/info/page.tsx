@@ -17,7 +17,7 @@ export default async function Page() {
   return (
     <>
       <div className="content-container">
-        <h1 className="title centered">INFORMACJE PODSTAWOWE</h1>
+        <h1 className="title-small centered">INFORMACJE PODSTAWOWE</h1>
 
         <p dangerouslySetInnerHTML={{ __html: basicInfo[0].text }} />
         <br />
@@ -28,7 +28,7 @@ export default async function Page() {
         <br />
         <p dangerouslySetInnerHTML={{ __html: basicInfo[2].text }} />
         <br />
-        <h1 className="title centered">ZASADY PODSTAWOWE</h1>
+        <h1 className="title-small centered">ZASADY PODSTAWOWE</h1>
         <ul className="info-list">
           {basicRules.map((rule) => {
             return (
@@ -38,7 +38,7 @@ export default async function Page() {
             );
           })}
         </ul>
-        <h1 className="title centered">KONTO DO WPŁAT</h1>
+        <h1 className="title-small centered">KONTO DO WPŁAT</h1>
         <p className="highlight-green">{payment.paymentRound1}</p>
         <p>{payment.paymentRound2}</p>
         <p>{payment.paymentRound3}</p>
@@ -49,7 +49,7 @@ export default async function Page() {
         <p>{payment.transferTitle}</p>
         <p>{payment.paymentOutro}</p>
         <br />
-        <h1 className="title centered">WARUNKI PANUJĄCE NA KONWENCIE</h1>
+        <h1 className="title-small centered">WARUNKI PANUJĄCE NA KONWENCIE</h1>
         <ul className="info-list">
           {conditions.map((condition) => {
             return (
@@ -60,7 +60,7 @@ export default async function Page() {
             );
           })}
         </ul>
-        <h1 className="title centered">
+        <h1 className="title-small centered">
           CZEGO MOŻNA SIĘ SPODZIEWAĆ NA ZIEMIACH JAŁOWYCH
         </h1>
         <ul className="info-list">

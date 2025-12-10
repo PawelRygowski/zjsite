@@ -48,6 +48,12 @@ body {
   font-family: var(--font-pirata);
 }
 
+.title-small {
+  color: rgb(147, 0, 0);
+  font-size: 30px;
+  font-family: var(--font-pirata);
+}
+
 .content-container {
   margin: 0 auto;
   max-width: 80%;
@@ -116,4 +122,18 @@ li {
 
 .menu-button:hover {
   color: white;
+}
+
+/* media */
+.promo-icons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.promo-icon {
+}
+
+.promo-text {
+  text-align: center;
+  font-family: var(--font-pirata);
 }

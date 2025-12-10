@@ -5,3 +5,7 @@
 .galery-links-container {
   display: flex;
 }
+
+.gallery-image {
+  padding: 10px;
+}

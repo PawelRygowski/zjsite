@@ -2,7 +2,7 @@ const larpData = [
   {
     id: 1,
     title: "Ziemie Jałowe",
-    text: `Ziemie Jałowe to immersyjna gra terenowa typu LARP (Live Action Role-Playing), w której uczestnicy wcielają się w stworzone przez siebie postacie i wspólnie tworzą opowieść w świecie inspirowanym postapokalipsą, cyberpunkiem oraz westernem (z pewnymi elementami horroru oraz magii). Świat gry czerpie również z motywów znanych z serii <span className="highlight">Mroczna Wieża</span></span> Stephena Kinga.`,
+    text: `Ziemie Jałowe to immersyjna gra terenowa typu LARP (Live Action Role-Playing), w której uczestnicy wcielają się w stworzone przez siebie postacie i wspólnie tworzą opowieść w świecie inspirowanym postapokalipsą, cyberpunkiem oraz westernem (z pewnymi elementami horroru oraz magii). Świat gry czerpie również z motywów znanych z serii <span class="highlight">Mroczna Wieża</span> Stephena Kinga.`,
   },
   {
     id: 2,

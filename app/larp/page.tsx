@@ -9,7 +9,7 @@ export default async function Page() {
         return (
           <div key={larp.id}>
             <br />
-            <h1 className="title centered">{larp.title}</h1>
+            <h1 className="title-small centered">{larp.title}</h1>
             <br />
             <p dangerouslySetInnerHTML={{ __html: larp.text }}></p>
           </div>

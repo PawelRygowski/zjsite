@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import TowerTop from "@/public/tower-top.webp";
 import GrubaBottom from "@/public/gruba-bottom.png";
 import Image from "next/image";
+import { PromoIconCard } from "./ui/home/promo-icon-card";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -62,6 +63,18 @@ export default async function Page() {
           koncerty czy legendarne już imprezy. Dołącz do nas i stań się częścią
           tej historii, społeczności oraz świata.
         </p>
+        <div className="promo-icons-container">
+          <PromoIconCard cardText="LARP" cardIconUrl="/icons/ikona1.webp" />
+          <PromoIconCard cardText="PROGRAM" cardIconUrl="/icons/ikona2.webp" />
+          <PromoIconCard
+            cardText="TYGODNIOWY KONWENT"
+            cardIconUrl="/icons/ikona3.webp"
+          />
+          <PromoIconCard
+            cardText="LEGENDARNE IMPREZY"
+            cardIconUrl="/icons/ikona4.webp"
+          />
+        </div>
       </div>
       <Image src={GrubaBottom} alt="Ziemie Jałowe" className="home-bottom" />
     </main>
